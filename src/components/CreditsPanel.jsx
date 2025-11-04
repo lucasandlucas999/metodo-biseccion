@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, ChevronDown, ChevronUp, Award} from 'lucide-react';
 
 const CreditsPanel = () => {
   const [showCredits, setShowCredits] = useState(false);
@@ -11,7 +11,7 @@ const CreditsPanel = () => {
         className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
       >
         <div className="flex items-center gap-2">
-          <Heart size={18} className="text-rose-500" />
+          <Award size={18} className="text-rose-500" />
           <h3 className="text-sm font-medium text-gray-900">Créditos</h3>
         </div>
         {showCredits ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
