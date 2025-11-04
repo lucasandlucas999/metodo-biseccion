@@ -24,8 +24,10 @@ const GraphVisualization = ({ func, iterations }) => {
         }
       } catch (e) {
         // Ignorar puntos donde la función no está definida
+        console.log("Error en generacion de puntos en la gráfica:", e);
       }
     }
+    console.log(data);
     return data;
   };
 
